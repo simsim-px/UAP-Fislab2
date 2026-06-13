@@ -140,6 +140,43 @@ body {
     grid-column: span 2;
 }
 
+.scientific-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Times New Roman", serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+.scientific-table caption {
+    caption-side: top;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.scientific-table thead {
+    border-top: 4px double black;
+}
+
+.scientific-table thead tr:last-child {
+    border-bottom: 2px solid black;
+}
+
+.scientific-table th,
+.scientific-table td {
+    padding: 6px 12px;
+    border: none;
+}
+
+.scientific-table th {
+    font-weight: bold;
+}
+
+.scientific-table tbody tr:last-child {
+    border-bottom: 2px solid black;
+}
+
 .footer img {
     width: 100%;
     height: auto;
