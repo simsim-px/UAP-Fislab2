@@ -140,11 +140,18 @@ body {
     grid-column: span 2;
 }
 
-.scientific-table{
+.table-wrapper{
+    display:flex;
+    justify-content:center;
+    gap:30px;
     width:100%;
+}
+
+.scientific-table{
+    width:48%;
     border-collapse:collapse;
     font-family:"Times New Roman", serif;
-    font-size:12px;
+    font-size:11px;
     text-align:center;
     margin:auto;
 }
