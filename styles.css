@@ -74,13 +74,22 @@ body {
 .animate-scale.next { transform: scale(0.9); }
 
 
-.header img {
-    height: 60px;
-    margin: 20px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header{
-    margin-bottom: 1px;
+.logo-header {
+    height: 60px;
+    margin: 18px;
+    margin-bottom: 0;
+}
+
+.qr-code {
+    height: 80px;
+    margin: 20px;
+    margin-bottom: 0;
 }
 
 .content {
@@ -188,7 +197,7 @@ body {
 }
 
 .scientific-table tbody tr:last-child{
-    border-bottom:1.5px solid #000;
+    border-bottom:4px double #000;
 }
 
 .scientific-table th,
