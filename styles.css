@@ -79,6 +79,10 @@ body {
     margin: 20px;
 }
 
+.header{
+    margin-bottom: 1px;
+}
+
 .content {
     margin-left: 80px;
     margin-right: 80px;
