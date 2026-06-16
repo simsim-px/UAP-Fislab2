@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
     overflow: hidden;
     background-color: #fff;
 }
@@ -98,7 +98,6 @@ body {
     color: #003366;
 }
 
-
 .content h1 {
     font-size: 4em;
     margin-bottom: 0;
@@ -113,7 +112,6 @@ body {
     font-size: 1.5em;
     margin-top: 30px;
 }
-
 
 .daftar-isi-title {
     font-size: 3em;
