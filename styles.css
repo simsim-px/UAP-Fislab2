@@ -1,3 +1,24 @@
+/* Default: desktop */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
+/* HP */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 8px;
+  }
+}
+
 body {
     margin: 0;
     font-family: Poppins, sans-serif;
@@ -113,6 +134,22 @@ body {
     margin-top: 30px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.row > * {
+  flex: 1 1 300px; /* min 300px, sisanya fleksibel */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
 .daftar-isi-title {
     font-size: 3em;
     margin-bottom: 30px;
@@ -174,6 +211,8 @@ body {
     justify-content:center;
     gap:30px;
     width:100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .scientific-table{
