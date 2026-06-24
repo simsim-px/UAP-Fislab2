@@ -243,6 +243,13 @@ body {
     background-color:#f0f0f0;
 }
 
+.grid-layout {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 15px;
+            align-items: center;
+        }
+
 .footer img {
     width: 100%;
     height: auto;
