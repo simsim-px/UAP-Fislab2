@@ -255,3 +255,44 @@ body {
     height: auto;
     display: block;
 }
+
+/* =========================
+   PRINT TO PDF
+   ========================= */
+@media print {
+
+    @page {
+        size: 33.867cm 19.05cm; /* 16:9 */
+        margin: 0;
+    }
+
+    body {
+        overflow: visible !important;
+        margin: 0;
+    }
+
+    .presentation-container {
+        height: auto !important;
+    }
+
+    .slide {
+        position: relative !important;
+
+        /* jangan pakai 100vh */
+        width: 100vw !important;
+        height: 56.25vw !important; /* 16:9 */
+
+        min-height: 0 !important;
+        max-height: none !important;
+
+        opacity: 1 !important;
+        pointer-events: auto !important;
+
+        page-break-after: always;
+        break-after: page;
+    }
+
+    .slide:last-child {
+        page-break-after: auto;
+    }
+}

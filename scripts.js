@@ -57,3 +57,11 @@ window.addEventListener('touchend', (e) => {
     if (dx < -40) changeSlide(Math.min(currentSlideIndex + 1, slides.length - 1));
     else if (dx > 40) changeSlide(Math.max(currentSlideIndex - 1, 0));
 });
+
+window.addEventListener('beforeprint', () => {
+
+    document.querySelectorAll('.slide').forEach(slide => {
+        slide.classList.add('active');
+    });
+
+});
